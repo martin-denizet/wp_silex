@@ -3,6 +3,8 @@
 WP Silex is a Perl script that helps to deploys Wordpress in seconds.
 Still beta, use at your own risk! But you're welcome to help improve it!
 
+Current version is 0.1.0
+
 ## What it does
 
 Makes you install proper packages.
@@ -25,6 +27,7 @@ Configures Wordpress and the web server (Apache2 or Nginx)
 
 Should be compatible with:
 * Debian 6 to Debian 8
+* Ubuntu (untested)
 
 Tested on Debian 7.4 (Wheezy) minimal
 
@@ -49,3 +52,7 @@ wget https://raw.githubusercontent.com/martin-denizet/wp_silex/master/silex.pl
 chmod +x silex.pl
 sudo ./silex.pl
 ```
+
+## Known issues:
+
+* Using Apache2, you may experience the error ```Package ‘libapache2-mod-fastcgi’ has no installation candidate```, see solution: http://www.queryadmin.com/494/package-libapache2-mod-fastcgi-has-no-installation-candidate/

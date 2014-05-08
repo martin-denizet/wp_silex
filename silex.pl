@@ -1,5 +1,4 @@
 #!/usr/bin/perl -w
-
 use strict;
 use warnings;
 
@@ -10,6 +9,8 @@ my $switch;
 $switch = shift;
 if ( $switch and ( $switch eq "-h" or $switch eq "--help" or $switch eq "-?" ) )
 {
+    print("=== Wordpress Silex version 0.1.0 ===\n");
+     print("Desciption:\n");
     print(
 "This script is meant to help you to install the latest version of Wordpress on a Debian or Ubuntu server\nIt is not recommended to use this script if your server is already being used in production.\nHelp and support: https://github.com/martin-denizet/wp_silex/\nAuthor: Martin DENIZET (http://martin-denizet.com)\nLicense: GPLv2"
     );
