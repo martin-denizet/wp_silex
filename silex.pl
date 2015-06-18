@@ -395,7 +395,7 @@ unless ( $dnsname eq '' ) {
     log_not_found off;
     access_log off;
   }
-  location ~* \.(js|css|png|jpg|jpeg|gif|ico)\$ {
+  location ~* \.(js|css|png|jpg|jpeg|gif|ico|svg)\$ {
     expires max;
     log_not_found off;
   }
